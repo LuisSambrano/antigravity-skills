@@ -159,10 +159,12 @@ jobs:
                       report += f"{i}. **{author}** - {count} commit{'s' if count > 1 else ''}\n"
               
               report += f"""
-          ---
+---
 
-          *This report is automatically generated every Monday. Next report: {(datetime.now() + timedelta(days=7)).strftime('%Y-%m-%d')}*
-          """
+> 💡 **Tip:** You can manually close this issue after reviewing the stats to keep the backlog clean.
+
+*This report is automatically generated every Monday. Next report: {(datetime.now() + timedelta(days=7)).strftime('%Y-%m-%d')}*
+"""
               
               return report
 
