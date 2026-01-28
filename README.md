@@ -111,6 +111,16 @@ Architect: [Generates complete Blueprint with architecture, schema, and implemen
 
 ---
 
+## 📝 Featured Gists
+
+Quick-reference guides and templates for common use cases:
+
+- **[Antigravity Architect - Live Demo](https://gist.github.com/LuisSambrano/8c7f188340296102543ca9e0aa2ca4b8)** - See the skill in action (MicroLearn AI Curator case study)
+- **[Gemini 1.5 Pro - Prompt Engineering Template](https://gist.github.com/LuisSambrano/0cf02751021ccd7de20a03201e739394)** - Production-ready prompt structure for reliable AI agents
+- **[Supabase RLS Patterns](https://gist.github.com/LuisSambrano/d652308ab96b61ab2199d6264b670ec8)** - Real-world Row Level Security policies (SaaS, Social, Marketplace)
+
+---
+
 ## 🧠 Philosophy: "Clean Room Engineering"
 
 We don't copy-paste from the internet. Every skill is designed from first principles:
