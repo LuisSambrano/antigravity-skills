@@ -7,7 +7,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/stale@v9
+    - uses: actions/stale@v10
       with:
         stale-issue-message: 'Este issue ha estado inactivo por 60 días. Se cerrará en 7 días si no hay actividad.'
         stale-issue-label: 'no-issue-activity'
