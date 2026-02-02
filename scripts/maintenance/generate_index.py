@@ -1,5 +1,6 @@
 import os
 import re
+
 def parse_skill_md(file_path):
     """Parses a SKILL.md file to extract name and description."""
     try:
@@ -17,137 +18,117 @@ def parse_skill_md(file_path):
             description = desc_match.group(1).strip() if desc_match else None
             
             if name and description:
-                # Remove quotes if present
                 name = name.strip('"').strip("'")
                 description = description.strip('"').strip("'")
                 return name, description
 
-        # Fallback: Parse Markdown headers/text
-        name = os.path.basename(os.path.dirname(file_path)).replace("-", " ").title()
-        
-        # Look for the first H1 or first few lines for description
+        # Fallback to H1
         h1_match = re.search(r'^#\s+(.+)$', content, re.MULTILINE)
         if h1_match:
-            name = h1_match.group(1)
+            return h1_match.group(1).strip(), "Sin descripción."
             
-        # Look for a paragraph after the header or frontmatter
-        body = content
-        if yaml_match:
-            body = content[yaml_match.end():]
-        
-        # Simple extraction of the first sentence-like thing if description is missing
-        desc_match = re.search(r'^(?!#)(.+)$', body, re.MULTILINE)
-        description = desc_match.group(1).strip() if desc_match else "Sin descripción disponible."
-        
-        return name, description
-    except Exception as e:
-        print(f"Error parsing {file_path}: {e}")
+        return os.path.basename(os.path.dirname(file_path)).title(), "Sin descripción."
+    except:
         return None, None
 
-def get_domain_category(path):
-    """Heuristic to categorize skill based on path."""
+def get_level(path):
+    """Maps path to Nivel for Dashboard V2."""
     path_lower = path.lower()
-    if any(k in path_lower for k in ["ai", "agent", "intelligence", "crew", "llm", "memory", "context"]):
-        return "🧠 Inteligencia Artificial y Agentes"
-    elif any(k in path_lower for k in ["web", "react", "nextjs", "ui", "ux", "frontend", "backend", "tailwind", "auth", "shopify", "telegram"]):
-        return "💻 Desarrollo Web Moderno"
-    elif any(k in path_lower for k in ["security", "vulnerability", "pen-test", "aws-security", "escalation", "injection"]):
-        return "🛡️ Seguridad Ofensiva y Defensiva"
-    elif any(k in path_lower for k in ["growth", "seo", "aso", "cro", "product", "marketing"]):
-        return "🚀 Crecimiento y Producto"
-    elif any(k in path_lower for k in ["automation", "n8n", "workflow", "maintenance", "browser", "playwright"]):
-        return "🤖 Automatización (Tools)"
-    elif any(k in path_lower for k in ["meta", "skill-creator", "loki", "framework"]):
-        return "🧬 Meta-Skills"
-    else:
-        return "📦 Otros Dominios"
+    if "meta-skills" in path_lower: return 0
+    if any(k in path_lower for k in ["ai-agents", "llm", "intelligence"]): return 1
+    if any(k in path_lower for k in ["web-development", "frontend", "backend"]): return 2
+    if "security" in path_lower: return 3
+    if any(k in path_lower for k in ["product-growth", "automation", "n8n"]): return 4
+    return 5
 
-def generate_readme_master():
-    base_path = "."
-    skills_dir = os.path.join(base_path, "skills")
+def generate_dashboard():
+    skills_dir = "skills"
+    levels = {0: [], 1: [], 2: [], 3: [], 4: [], 5: []}
     
-    if not os.path.exists(skills_dir):
-        print(f"Error: {skills_dir} no encontrado.")
-        return
-
-    domain_mapping = {
-        "🧠 Inteligencia Artificial y Agentes": [],
-        "💻 Desarrollo Web Moderno": [],
-        "🛡️ Seguridad Ofensiva y Defensiva": [],
-        "🚀 Crecimiento y Producto": [],
-        "🤖 Automatización (Tools)": [],
-        "🧬 Meta-Skills": [],
-        "📦 Otros Dominios": []
-    }
-
-    # Iterate skills
     for root, dirs, files in os.walk(skills_dir):
         if "SKILL.md" in files:
-            file_path = os.path.join(root, "SKILL.md")
-            name, description = parse_skill_md(file_path)
-            
+            path = os.path.join(root, "SKILL.md")
+            name, desc = parse_skill_md(path)
             if name:
-                rel_path = os.path.relpath(file_path, base_path)
-                category = get_domain_category(rel_path)
-                
-                # Sanitize description (keep it to 1 line)
-                if description:
-                    description = description.split('\n')[0].strip()
-                    if len(description) > 120:
-                        description = description[:117] + "..."
-                
-                domain_mapping[category].append({
+                # Sanitize description
+                desc = desc.split('.')[0].strip()[:100] + "..." if len(desc) > 100 else desc
+                levels[get_level(root)].append({
                     "name": name,
-                    "path": rel_path,
-                    "desc": description
+                    "path": path,
+                    "desc": desc,
+                    "cat": os.path.basename(os.path.dirname(root)).replace("-", " ").title()
                 })
 
-    # Build Content
-    header = """# 🌌 Google Antigravity: Sistema Operativo de Inteligencia Colectiva
+    header = """<div align="center">
 
-**Estado:** Activo | **Arquitectura:** Modular | **Idioma del Índice:** Español
+# 🌌 GOOGLE ANTIGRAVITY
+### Sistema Operativo de Inteligencia Colectiva
 
-Este documento es el **Mapa de Navegación Maestro**. Organiza las capacidades del sistema en dominios lógicos para facilitar la auditoría y la toma de decisiones estrátegicas.
+![Status](https://img.shields.io/badge/ESTADO-OPERATIVO-success?style=for-the-badge&logo=statuspage)
+![Version](https://img.shields.io/badge/VERSION-2.1.0-blue?style=for-the-badge&logo=semver)
+![Access](https://img.shields.io/badge/NIVEL-ROOT-red?style=for-the-badge&logo=riotgames)
+
+<p align="center">
+  <em>Arquitectura Modular • Protocolo Zero • Autonomía Agéntica</em>
+</p>
+
+</div>
 
 ---
 
-## 🗺️ Mapa de Dominios
+## 🧭 Panel de Control
+
+Bienvenido al mapa central. Este repositorio monorepo está organizado por **Dominios de Competencia**. Seleccione un módulo para desplegar sus capacidades.
 """
 
-    body = ""
-    for domain, items in domain_mapping.items():
-        if not items:
-            continue
-            
-        body += f"\n### {domain}\n"
-        for item in sorted(items, key=lambda x: x["name"]):
-            body += f"*   [{item['name']}]({item['path']}): {item['desc']}\n"
+    # Nivel 0
+    lv0 = "\n### 🧬 Nivel 0: El Núcleo (Meta-Skills)\n*Capacidades reflexivas que gobiernan, crean y mejoran el sistema.*\n\n| Módulo | Descripción | Tecnología | Acceso |\n| :--- | :--- | :---: | :---: |\n"
+    for s in sorted(levels[0], key=lambda x: x['name']):
+        lv0 += f"| **[{s['name'].upper()}]({s['path']})** | {s['desc']} | `System` | 🔴 |\n"
+
+    # Nivel 1
+    lv1 = "\n### 🧠 Nivel 1: Inteligencia Artificial\n*Cerebros digitales, memoria y motores cognitivos.*\n\n| Skill | Función Principal | Stack |\n| :--- | :--- | :---: |\n"
+    for s in sorted(levels[1], key=lambda x: x['name']):
+        lv1 += f"| **[{s['name']}]({s['path']})** | {s['desc']} | `Python` |\n"
+
+    # Nivel 2
+    lv2 = "\n### 💻 Nivel 2: Ingeniería & Web\n*Estándares de construcción de software y sistemas de diseño.*\n\n| Dominio | Skill Destacada | Enfoque |\n| :--- | :--- | :--- |\n"
+    for s in sorted(levels[2], key=lambda x: x['name']):
+        lv1_cat = s['cat']
+        lv2 += f"| **{lv1_cat}** | **[{s['name']}]({s['path']})** | {s['desc']} |\n"
+
+    # Nivel 3
+    lv3 = "\n### 🛡️ Nivel 3: Seguridad (Red Team)\n*Protocolos ofensivos y defensivos.*\n\n| Vector | Herramienta/Guía | Criticidad |\n| :--- | :--- | :---: |\n"
+    for s in sorted(levels[3], key=lambda x: x['name']):
+        lv3 += f"| **{s['cat']}** | **[{s['name']}]({s['path']})** | 🔥 |\n"
+
+    # Nivel 4
+    lv4 = "\n### 🚀 Nivel 4: Growth & Automatización\n*Expansión del producto y eficiencia operativa.*\n\n"
+    # Group by category for Nivel 4
+    n4_cats = {}
+    for s in levels[4]:
+        n4_cats.setdefault(s['cat'], []).append(s)
+    
+    for cat, items in n4_cats.items():
+        lv4 += f"* **{cat}:**\n"
+        for s in sorted(items, key=lambda x: x['name']):
+            lv4 += f"    * [{s['name']}]({s['path']}) ({s['desc']})\n"
 
     footer = """
 ---
 
-## 🏗️ Convenciones del Repositorio
+<div align="center">
 
-Consulta [docs/architecture/REPOSITORY_GOVERNANCE.md](docs/architecture/REPOSITORY_GOVERNANCE.md) para entender las reglas de contribución.
+**[📚 Ver Gobernanza del Repositorio](docs/architecture/REPOSITORY_GOVERNANCE.md)**
+<br>
+*Google Antigravity System © 2026*
 
-### Estructura Física:
-```text
-google-antigravity/
-├── assets/                 # Recursos estáticos globales
-├── docs/                   # Documentación de arquitectura
-├── rules/                  # Reglas de linter y cursor
-├── skills/                 # CATÁLOGO DE FUNCIONALIDADES
-└── tools/                  # Herramientas CLI (Python/Bash)
-```
-
-> [!NOTE]
-> Este índice se genera automáticamente mediante `scripts/maintenance/generate_index.py`. No editar manualmente las secciones del mapa de dominios.
+</div>
 """
 
-    with open("README_MASTER.md", "w", encoding="utf-8") as f:
-        f.write(header + body + footer)
-
-    print("README_MASTER.md actualizado correctamente.")
+    with open("README_MASTER.md", "w") as f:
+        f.write(header + lv0 + lv1 + lv2 + lv3 + lv4 + footer)
+    print("Dashboard V2 generado.")
 
 if __name__ == "__main__":
-    generate_readme_master()
+    generate_dashboard()
