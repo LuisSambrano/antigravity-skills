@@ -18,7 +18,6 @@ El núcleo funcional. Aquí residen las capacidades modulares que los agentes "a
 
 - **Cybersecurity & Compliance**: Módulos para auditoría en tiempo real y encriptación de datos.
 - **Web Development**: Stack estandarizado sobre **React** y **Next.js**, optimizado para el despliegue rápido en Vercel.
-- **Google Stitch Integration**: La adición más reciente. Permite a los agentes interactuar directamente con servicios de diseño generativo de UI, cerrando la brecha entre el backend y la experiencia visual.
 - **Visual Intelligence (UI/UX Pro Max)**: El nuevo estándar de diseño situado en `skills/web-development/ui-ux-pro-max`, que fusiona reglas de ingeniería Frontend con principios de diseño "Gorgeous".
 
 ### 2. Protocolos Normativos (`rules/`)
