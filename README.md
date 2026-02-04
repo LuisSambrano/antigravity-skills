@@ -68,6 +68,7 @@ Pre-built expertise in:
 
 - **AI Agents** — LangGraph, CrewAI, RAG
 - **Web Dev** — Next.js, React, Tailwind
+- **Blockchain** — Celo, EVM, MiniPay, DeFi
 - **Security** — API security, Pentesting
 - **Automation** — Playwright, GitHub Actions
 
@@ -118,14 +119,15 @@ Your AI handles everything:
 
 <div align="center">
 
-|      Category      | Skills | Highlights                                           |
-| :----------------: | :----: | :--------------------------------------------------- |
-|  🤖 **AI Agents**  |   30   | LangGraph, CrewAI, RAG, Voice AI, Prompt Engineering |
-| 🔧 **Automation**  |   27   | Playwright, Firecrawl, GitHub Actions, Web Scraping  |
-|  🔒 **Security**   |   31   | API Security, Auth, Penetration Testing              |
-|   💻 **Web Dev**   |   67   | Next.js, React, Tailwind, Supabase, Vercel           |
-|   ✍️ **Content**   |   16   | SEO, Technical Writing, Copywriting                  |
-| 🏗️ **Engineering** |   15   | Architecture, Docker, CI/CD, Testing                 |
+|      Category      | Skills | Highlights                                            |
+| :----------------: | :----: | :---------------------------------------------------- |
+|  🤖 **AI Agents**  |   30   | LangGraph, CrewAI, RAG, Voice AI, Prompt Engineering  |
+| 🔧 **Automation**  |   27   | Playwright, Firecrawl, GitHub Actions, Web Scraping   |
+|  🔒 **Security**   |   31   | API Security, Auth, Penetration Testing               |
+|   💻 **Web Dev**   |   67   | Next.js, React, Tailwind, Supabase, Vercel            |
+|  ⛓️ **Web3/Celo**  |   12   | Celo, MiniPay, DeFi, Smart Contracts, Fee Abstraction |
+|   ✍️ **Content**   |   16   | SEO, Technical Writing, Copywriting                   |
+| 🏗️ **Engineering** |   15   | Architecture, Docker, CI/CD, Testing                  |
 
 </div>
 
@@ -191,7 +193,7 @@ cd antigravity-config && chmod +x install.sh && ./install.sh
 
 ### ¿Qué obtienes?
 
-- 🧠 **100+ habilidades** pre-configuradas
+- 🧠 **100+ habilidades** pre-configuradas (AI, Web, Blockchain, SEO)
 - ⚡ **3 comandos simples**: `/deploy`, `/idea`, `/status`
 - 📋 **Reglas automáticas** de calidad y seguridad
 - 🤖 **Comportamientos automáticos** sin configuración
