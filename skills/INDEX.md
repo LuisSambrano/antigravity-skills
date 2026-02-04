@@ -1,6 +1,6 @@
 # 📚 Skills Index
 
-A curated catalog of 100+ AI skills organized by category.
+A curated catalog of 300+ AI skills organized by category.
 
 ---
 
@@ -9,13 +9,14 @@ A curated catalog of 100+ AI skills organized by category.
 | Category                      | Skills    | Focus                         |
 | ----------------------------- | --------- | ----------------------------- |
 | [1-core](#1-core)             | Essential | Always-loaded fundamentals    |
-| [2-ai](#2-ai)                 | 30+       | Agents, prompting, RAG, voice |
-| [3-web](#3-web)               | 60+       | Frontend, backend, platforms  |
-| [4-automation](#4-automation) | 25+       | Testing, CI/CD, scraping      |
+| [2-ai](#2-ai)                 | 60+       | Agents, prompting, RAG, voice |
+| [3-web](#3-web)               | 100+      | Frontend, backend, platforms  |
+| [4-automation](#4-automation) | 50+       | Testing, CI/CD, scraping      |
 | [5-security](#5-security)     | 30+       | API security, pentesting      |
-| [6-content](#6-content)       | 15+       | Writing, SEO, docs            |
+| [6-content](#6-content)       | 30+       | Writing, SEO, docs            |
 | [7-meta](#7-meta)             | 15+       | Skills about skills           |
 | [8-blockchain](#8-blockchain) | 10+       | Web3, Celo, EVM, DeFi         |
+| [9-growth](#9-growth)         | 10+       | Marketing, Agency Workflow    |
 
 ---
 
@@ -180,6 +181,27 @@ Web3 and Blockchain development skills focused on Celo and EVM.
 | `viem` & `wagmi`          | Modern Ethereum libraries for Celo |
 | `evm-hardhat` & `foundry` | Smart contract development tools   |
 | `bridging` & `defi`       | Cross-chain and DeFi protocols     |
+
+---
+
+---
+
+## 9-growth
+
+Product growth, marketing, and agency workflows.
+
+### 9-growth/agency
+
+| Skill                          | Description                                      |
+| ------------------------------ | ------------------------------------------------ |
+| `marketing-campaign-architect` | **Director**: Orchestrates full marketing agency |
+| `product-marketing-context`    | **Strategist**: Defines positioning & context    |
+| `copywriting`                  | **Copywriter**: Generates sales copy             |
+| `copy-editing`                 | **Editor**: Polishes and refines copy            |
+| `page-cro`                     | **Optimizer**: Landing page optimization         |
+| `popup-cro`                    | **Conversion**: Popup strategy                   |
+| `email-sequence`               | **Automator**: Sales email sequences             |
+| `ab-test-setup`                | **Analyst**: Experimentation plans               |
 
 ---
 
