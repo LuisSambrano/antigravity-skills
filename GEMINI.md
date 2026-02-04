@@ -24,7 +24,7 @@
    - TypeScript strict mode siempre
 
 3. **Documentación como Código**
-   - README bilingüe (EN + ES) obligatorio
+   - README Trilingüe Senior (EN + ES + PT) obligatorio
    - Arquitectura visible en diagramas Mermaid
    - Comentarios explican el "por qué", no el "qué"
 
@@ -69,7 +69,8 @@ proyecto/
 │   └── hooks/
 ├── types/
 ├── README.md                  # ← OBLIGATORIO (EN)
-└── README.es.md               # ← OBLIGATORIO (ES)
+├── README.es.md               # ← OBLIGATORIO (ES)
+└── README.pt.md               # ← OBLIGATORIO (PT)
 ```
 
 **Patrones Arquitectónicos Obligatorios**:
@@ -110,7 +111,7 @@ tsc --noEmit   # ✅ 0 errores de tipos
 **Acciones Automáticas**:
 
 1. ✅ Verificar proyecto tiene `.agent/` directory
-2. ✅ Verificar existe `README.md` y `README.es.md`
+2. ✅ Verificar existe `README.md`, `README.es.md` y `README.pt.md`
 3. ✅ Verificar `tsconfig.json` con `strict: true`
 4. ✅ Verificar `.eslintrc.json` configurado
 5. ✅ Si falta algo, crear automáticamente
@@ -741,8 +742,8 @@ When explaining technical concepts in Spanish:
 **Path**: `/Users/luissambrano/playground/.agent/workflows/create-component.md`
 
 **When User Says**: "Create a README...", "Document this..."
-**You Action**: Read & Follow `create-bilingual-readme.md`
-**Path**: `/Users/luissambrano/playground/.agent/workflows/create-bilingual-readme.md`
+**You Action**: Read & Follow `create-trilingual-readme.md`
+**Path**: `/Users/luissambrano/playground/.agent/workflows/create-trilingual-readme.md`
 
 **When User Says**: "Make a comic...", "Generate a story..."
 **You Action**: Read & Follow `generar-comic.md`
