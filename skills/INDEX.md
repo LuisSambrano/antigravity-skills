@@ -1,22 +1,21 @@
-# 📚 Skills Index
+# Skills Index
 
-A curated catalog of 300+ AI skills organized by category.
+44 AI skills organized by category.
 
 ---
 
-## 🔍 Quick Navigation
+## Quick Navigation
 
-| Category                      | Skills    | Focus                         |
-| ----------------------------- | --------- | ----------------------------- |
-| [1-core](#1-core)             | Essential | Always-loaded fundamentals    |
-| [2-ai](#2-ai)                 | 60+       | Agents, prompting, RAG, voice |
-| [3-web](#3-web)               | 100+      | Frontend, backend, platforms  |
-| [4-automation](#4-automation) | 50+       | Testing, CI/CD, scraping      |
-| [5-security](#5-security)     | 30+       | API security, pentesting      |
-| [6-content](#6-content)       | 30+       | Writing, SEO, docs            |
-| [7-meta](#7-meta)             | 15+       | Skills about skills           |
-| [8-blockchain](#8-blockchain) | 10+       | Web3, Celo, EVM, DeFi         |
-| [9-growth](#9-growth)         | 10+       | Marketing, Agency Workflow    |
+| Category                      | Skills | Focus                         |
+| ----------------------------- | ------ | ----------------------------- |
+| [1-core](#1-core)             | 1      | Always-loaded fundamentals    |
+| [2-ai](#2-ai)                 | 10     | Agents, prompting, RAG, voice |
+| [3-web](#3-web)               | 8      | Frontend, backend, platforms  |
+| [4-automation](#4-automation) | 4      | Testing, CI/CD, scraping      |
+| [5-security](#5-security)     | 2      | API security, pentesting      |
+| [6-content](#6-content)       | —      | Writing, SEO, docs            |
+| [7-meta](#7-meta)             | 3      | Skills about skills           |
+| [8-blockchain](#8-blockchain) | 16     | Celo, EVM, DeFi               |
 
 ---
 

@@ -1,229 +1,183 @@
 <div align="center">
 
-<!-- HEADER HERO SECTION -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=🌌%20Antigravity%20Config&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Transforma%20tu%20IA%20en%20un%20Socio%20de%20Código%20Supervitaminado&descSize=16&descAlignY=52"/>
+# Antigravity Config
 
-<!-- BADGES -->
-<p>
-  <a href="#-inicio-rápido"><img src="https://img.shields.io/badge/Instalación-2%20Minutos-success?style=for-the-badge&logo=rocket" alt="Instalación en 2 Minutos"/></a>
-  <a href="#-biblioteca-de-habilidades"><img src="https://img.shields.io/badge/Skills-300+-blue?style=for-the-badge&logo=brain" alt="300+ Habilidades"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Licencia-MIT-yellow?style=for-the-badge&logo=opensourceinitiative" alt="Licencia MIT"/></a>
-</p>
+Un framework de configuración para entornos de desarrollo asistidos por IA.  
+Reglas, skills y workflows que estandarizan cómo operan los agentes de código IA en tus proyectos.
 
-<!-- SOCIAL PROOF -->
 <p>
-  <a href="https://github.com/LuisSambrano/antigravity-config/stargazers"><img src="https://img.shields.io/github/stars/LuisSambrano/antigravity-config?style=social" alt="Stars"/></a>
-  <a href="https://github.com/LuisSambrano/antigravity-config/network/members"><img src="https://img.shields.io/github/forks/LuisSambrano/antigravity-config?style=social" alt="Forks"/></a>
-  <a href="https://github.com/LuisSambrano"><img src="https://img.shields.io/github/followers/LuisSambrano?style=social" alt="Followers"/></a>
-</p>
-
-<!-- LANGUAGE SWITCHER -->
-<p>
-  <strong>🌐 Idioma:</strong>
   <a href="./README.md">English</a> •
   <a href="./README.es.md">Español</a> •
   <a href="./README.pt.md">Português</a>
 </p>
 
-<br/>
-
-<!-- VALUE PROPOSITION -->
-<h3>🚀 Un comando. 300+ superpoderes de IA. Cero configuración.</h3>
-
 <p>
-  <em>Deja de perder horas configurando tu asistente de IA.<br/>
-  Clona, instala, programa. Es así de simple.</em>
+  <a href="#"><img src="https://img.shields.io/badge/Licencia-MIT-blue?style=flat-square" alt="MIT License"/></a>
+  <a href="https://github.com/LuisSambrano/antigravity-config/stargazers"><img src="https://img.shields.io/github/stars/LuisSambrano/antigravity-config?style=flat-square" alt="Stars"/></a>
 </p>
 
 </div>
 
 ---
 
-## ⚡ Inicio Rápido
+## Qué es esto
+
+Este repositorio provee un directorio `.agent/` listo para usar con asistentes de código IA (Gemini, Cursor, Windsurf, etc.). Incluye:
+
+- **Rules** — Estándares de código, patrones de arquitectura y quality gates que el agente IA aplica automáticamente.
+- **Skills** — Archivos de conocimiento especializado que extienden la expertise del agente (44 skills en 8 categorías).
+- **Workflows** — Scripts de comandos paso a paso que el agente sigue para tareas comunes como deployment y setup de proyectos.
+
+El objetivo es directo: clonar, instalar, y tener un entorno de desarrollo consistente y opinionado donde tu asistente IA sigue estándares profesionales.
+
+---
+
+## Inicio Rápido
 
 ```bash
-# Clonar el repositorio
 git clone https://github.com/LuisSambrano/antigravity-config.git
-
-# Ejecutar el instalador
 cd antigravity-config && chmod +x install.sh && ./install.sh
-
-# Reinicia tu IDE y escribe:
-/status
 ```
 
-**¡Eso es todo!** Tu IA ahora está supervitaminada. 🎉
+El instalador copia rules, skills y workflows a tu directorio `.agent/` del workspace y configura `GEMINI.md` como archivo de reglas globales.
 
 ---
 
-## 🎁 Lo que Obtienes
-
-<table>
-<tr>
-<td width="50%">
-
-### 🧠 300+ Habilidades
-
-Experiencia pre-construida en:
-
-- **Agentes IA** — LangGraph, CrewAI, RAG
-- **Web Dev** — Next.js, React, Tailwind
-- **Blockchain** — Celo, EVM, MiniPay, DeFi
-- **Seguridad** — Seguridad API, Pentesting
-- **Growth** — Agencia de Marketing, CRO, Copywriting
-- **Automatización** — Playwright, GitHub Actions
-
-</td>
-<td width="50%">
-
-### ⚡ 4 Comandos Simples
-
-Todo lo demás es automático:
-
-- `/deploy` — Despliegue a producción
-- `/idea` — Evaluar nuevas ideas
-- `/status` — Chequeo de salud del proyecto
-- `/marketing-agency` — Lanzar campañas completas
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 📋 Reglas Maestras
-
-Calidad consistente en todos los proyectos:
-
-- Estándares de arquitectura
-- Convenciones de código
-- Mejores prácticas de seguridad
-- Puertas de calidad (Quality Gates)
-
-</td>
-<td width="50%">
-
-### 🤖 Comportamientos Automáticos
-
-Tu IA maneja todo por ti:
-
-- Chequeos de calidad de código
-- Auditorías de seguridad
-- Documentación
-- Mejores prácticas
-
-</td>
-</tr>
-</table>
-
----
-
-## 📊 Biblioteca de Habilidades
-
-<div align="center">
-
-|     Categoría     | Skills | Destacados                                            |
-| :---------------: | :----: | :---------------------------------------------------- |
-| 🤖 **Agentes IA** |  30+   | LangGraph, CrewAI, RAG, Voice AI, Ingeniería Prompt   |
-| 🔧 **Automatiza** |  50+   | Playwright, Firecrawl, GitHub Actions, Scraping       |
-| 🔒 **Seguridad**  |  30+   | Seguridad API, Auth, Pruebas de Penetración           |
-|  💻 **Web Dev**   |  100+  | Next.js, React, Tailwind, Supabase, Vercel            |
-| ⛓️ **Web3/Celo**  |  10+   | Celo, MiniPay, DeFi, Smart Contracts, Abstracción Gas |
-| ✍️ **Contenido**  |  30+   | SEO, Escritura Técnica, Copywriting                   |
-| 🏗️ **Ingeniería** |  15+   | Arquitectura, Docker, CI/CD, Testing                  |
-|   📈 **Growth**   |  10+   | Agencia Marketing, CRO, A/B Testing, Email Sequences  |
-
-</div>
-
----
-
-## 📁 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```
 antigravity-config/
-├── 📄 README.md           ← Documentación en Inglés
-├── 📄 README.es.md        ← Estás aquí
-├── 📄 README.pt.md        ← Documentação em Português
-├── 🚀 install.sh          ← Instalador en un click
-├── 🧠 GEMINI.md           ← Plantilla del cerebro IA
+├── GEMINI.md                  # Template de reglas globales (personalizable)
+├── install.sh                 # Script de instalación
 │
-├── 📋 rules/              ← Reglas maestras (siempre activas)
-│   ├── PROTOCOL_ZERO.md
+├── rules/                     # Estándares de código y arquitectura
+│   ├── PROTOCOL_ZERO.md       # Filosofía base y principios
 │   ├── ARCHITECTURE_STANDARDS.md
 │   ├── CODE_STANDARDS.md
-│   └── QUALITY_GATES.md
+│   ├── QUALITY_GATES.md
+│   ├── frontend/              # Reglas específicas de frontend
+│   └── backend/               # Reglas específicas de backend
 │
-├── 🛠️ skills/             ← 300+ habilidades por categoría
-│   ├── ai-agents/
-│   ├── product-growth/
-│   ├── web-development/
-│   └── ...
+├── skills/                    # Conocimiento de dominio (44 skills)
+│   ├── 1-core/                # Fundamentos de código
+│   ├── 2-ai/                  # Agentes IA, RAG, prompting
+│   ├── 3-web/                 # Desarrollo web (Next.js, React, Tailwind)
+│   ├── 4-automation/          # Testing, CI/CD, scraping
+│   ├── 5-security/            # Seguridad API, pentesting
+│   ├── 6-content/             # Escritura técnica, SEO
+│   ├── 7-meta/                # Creación y gestión de skills
+│   └── 8-blockchain/          # Celo, EVM, DeFi
 │
-└── ⚙️ workflows/          ← Comandos de usuario
-    ├── deploy.md
-    ├── idea.md
-    ├── status.md
-    └── marketing-agency.md
+├── workflows/                 # Scripts de comandos del agente
+│   ├── deploy.md              # /deploy — deployment a producción
+│   ├── idea.md                # /idea — evaluar ideas de proyecto
+│   ├── status.md              # /status — health check del proyecto
+│   ├── create-component.md    # /create-component — scaffold de componentes
+│   └── help.md                # /help — listar comandos disponibles
+│
+├── templates/                 # Templates de proyecto
+├── research/                  # Log de decisiones y hallazgos
+└── docs/                      # Documentación adicional
 ```
 
 ---
 
-<div align="center">
+## Referencia de Skills
 
-## 🌟 Dale una Estrella
+Los skills son archivos markdown que dan al agente IA conocimiento específico de dominio. Cada skill contiene instrucciones, patrones y referencias que el agente utiliza al trabajar en ese dominio.
 
-Si esto te ayudó, **dale una estrella** ⭐ para ayudar a otros a encontrarlo.
+### 1-core — Fundamentos
 
-<a href="https://github.com/LuisSambrano/antigravity-config/stargazers">
-  <img src="https://img.shields.io/github/stars/LuisSambrano/antigravity-config?style=for-the-badge&logo=github&color=yellow" alt="Star on GitHub"/>
-</a>
+Convenciones de código, estándares de estructura de proyecto y patrones TypeScript aplicables a todos los proyectos.
 
-</div>
+### 2-ai — IA y Agentes (10 skills)
+
+Orquestación multi-agente (LangGraph, CrewAI), sistemas RAG, ingeniería de prompts, desarrollo de Voice AI y frameworks de evaluación de agentes.
+
+### 3-web — Desarrollo Web (8 skills)
+
+Patrones de Next.js App Router, mejores prácticas de React, arquitectura Tailwind CSS, integración con Supabase, deployment en Vercel y principios de diseño UI/UX.
+
+### 4-automation — Testing y DevOps (4 skills)
+
+Testing con Playwright, workflows de GitHub Actions, procedimientos de deployment y web scraping con Firecrawl.
+
+### 5-security — Seguridad (2 skills)
+
+Mejores prácticas de seguridad API y checklists de penetration testing.
+
+### 6-content — Creación de Contenido
+
+Guías de escritura técnica, copywriting SEO y estándares de documentación.
+
+### 7-meta — Gestión de Skills (3 skills)
+
+Herramientas para crear nuevos skills, planificación con archivos y mejora continua (Kaizen).
+
+### 8-blockchain — Celo y EVM (16 skills)
+
+Stack completo de desarrollo Celo: integración con MiniPay, fee abstraction, direcciones de stablecoins, scaffolding con Celo Composer, librerías viem/wagmi, tooling Hardhat/Foundry, bridging cross-chain, integración con protocolos DeFi, protocolo de confianza ERC-8004 y protocolo de pagos HTTP x402.
+
+> Ver [skills/INDEX.md](./skills/INDEX.md) para el desglose skill por skill.
 
 ---
 
-## 🤝 Contribuir
+## Resumen de Rules
 
-¡Agradecemos las contribuciones! Mira [CONTRIBUTING.md](CONTRIBUTING.md) para pautas (en inglés).
+Las rules definen cómo el agente IA escribe y valida código. Se cargan en el contexto del agente y se aplican automáticamente.
+
+| Rule                        | Propósito                                                            |
+| --------------------------- | -------------------------------------------------------------------- |
+| `PROTOCOL_ZERO.md`          | Filosofía base: calidad sobre velocidad, local como fuente de verdad |
+| `ARCHITECTURE_STANDARDS.md` | Estructura de proyecto, organización de componentes, nomenclatura    |
+| `CODE_STANDARDS.md`         | TypeScript strict mode, orden de imports, error handling, JSDoc      |
+| `QUALITY_GATES.md`          | Checks pre-commit, verificación de build, accesibilidad, performance |
+
+---
+
+## Personalización
+
+`GEMINI.md` es el archivo de configuración principal. Agrega todas las rules en un solo documento que el agente IA lee. Edítalo para:
+
+- Agregar o quitar rules
+- Cambiar convenciones de nomenclatura
+- Ajustar umbrales de calidad
+- Agregar routing de workflows para tus propios comandos
+
+Las secciones marcadas con `<!-- CUSTOMIZE -->` están diseñadas para ser modificadas.
+
+---
+
+## Contribuir
+
+Ver [CONTRIBUTING.md](CONTRIBUTING.md) para pautas sobre agregar skills, workflows o rules.
 
 ```bash
-# Haz un fork del repo
-# Crea tu rama de funcionalidad
-git checkout -b feature/funcionalidad-increible
-
-# Haz commit de tus cambios
-git commit -m 'feat: agregar funcionalidad increible'
-
-# Push y crea un PR
-git push origin feature/funcionalidad-increible
+git checkout -b feature/tu-feature
+git commit -m 'feat(skills): add nombre-del-skill'
+git push origin feature/tu-feature
 ```
 
 ---
 
-## 🔬 Investigación y Registro de Decisiones
-
-Este proyecto actúa como el **Centro de Investigación** para el ecosistema Antigravity. Define los estándares, reglas y filosofía que todos los demás proyectos deben seguir.
+## Investigación y Log de Decisiones
 
 | Documento                                     | Propósito                                    |
 | --------------------------------------------- | -------------------------------------------- |
-| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | La "Constitución" y principios fundacionales |
-| [prompts/](./research/prompts/)               | Estado de Definición de Reglas Maestras      |
-| [rules/](./rules/)                            | Documentos Detallados de Estándares          |
+| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | Principios base y hallazgos de investigación |
+| [prompts/](./research/prompts/)               | Prompts de definición de rules e iteraciones |
+| [rules/](./rules/)                            | Los documentos de estándares resultantes     |
 
-> **Protocolo del Sistema**: Lee `KEY_FINDINGS.md` primero para entender el **Protocolo Zero** y los valores no negociables.
+---
+
+## Licencia
+
+MIT — ver [LICENSE](LICENSE) para detalles.
 
 ---
 
 <div align="center">
 
-## 📬 Conectar
-
-<a href="https://github.com/LuisSambrano"><img src="https://img.shields.io/badge/GitHub-LuisSambrano-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
-<a href="https://x.com/luissambrano_ux"><img src="https://img.shields.io/badge/Twitter-@luissambrano__ux-1DA1F2?style=for-the-badge&logo=twitter" alt="Twitter"/></a>
-
-<br/><br/>
-
-**Hecho con 🧠 por Luis Sambrano**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
+**Mantenido por [Luis Sambrano](https://github.com/LuisSambrano)**
 
 </div>

@@ -1,229 +1,183 @@
 <div align="center">
 
-<!-- HEADER HERO SECTION -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=🌌%20Antigravity%20Config&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Transform%20Your%20AI%20Into%20A%20Supercharged%20Coding%20Partner&descSize=16&descAlignY=52"/>
+# Antigravity Config
 
-<!-- BADGES -->
-<p>
-  <a href="#-quick-start"><img src="https://img.shields.io/badge/Setup-2%20Minutes-success?style=for-the-badge&logo=rocket" alt="2 Minute Setup"/></a>
-  <a href="#-skills-library"><img src="https://img.shields.io/badge/Skills-300+-blue?style=for-the-badge&logo=brain" alt="300+ Skills"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=opensourceinitiative" alt="MIT License"/></a>
-</p>
+A configuration framework for AI-assisted development environments.  
+Rules, skills, and workflows that standardize how AI coding agents operate across projects.
 
-<!-- SOCIAL PROOF -->
 <p>
-  <a href="https://github.com/LuisSambrano/antigravity-config/stargazers"><img src="https://img.shields.io/github/stars/LuisSambrano/antigravity-config?style=social" alt="Stars"/></a>
-  <a href="https://github.com/LuisSambrano/antigravity-config/network/members"><img src="https://img.shields.io/github/forks/LuisSambrano/antigravity-config?style=social" alt="Forks"/></a>
-  <a href="https://github.com/LuisSambrano"><img src="https://img.shields.io/github/followers/LuisSambrano?style=social" alt="Followers"/></a>
-</p>
-
-<!-- LANGUAGE SWITCHER -->
-<p>
-  <strong>🌐 Language:</strong>
   <a href="./README.md">English</a> •
   <a href="./README.es.md">Español</a> •
   <a href="./README.pt.md">Português</a>
 </p>
 
-<br/>
-
-<!-- VALUE PROPOSITION -->
-<h3>🚀 One command. 300+ AI superpowers. Zero configuration.</h3>
-
 <p>
-  <em>Stop wasting hours configuring your AI assistant.<br/>
-  Clone, install, code. It's that simple.</em>
+  <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="MIT License"/></a>
+  <a href="https://github.com/LuisSambrano/antigravity-config/stargazers"><img src="https://img.shields.io/github/stars/LuisSambrano/antigravity-config?style=flat-square" alt="Stars"/></a>
 </p>
 
 </div>
 
 ---
 
-## ⚡ Quick Start
+## What This Is
+
+This repository provides a ready-to-use `.agent/` configuration directory for AI coding assistants (Gemini, Cursor, Windsurf, etc.). It includes:
+
+- **Rules** — Coding standards, architecture patterns, and quality gates that the AI agent enforces automatically.
+- **Skills** — Domain-specific knowledge files that extend the agent's expertise (44 skills across 8 categories).
+- **Workflows** — Step-by-step command scripts the agent follows for common tasks like deployment and project setup.
+
+The goal is simple: clone once, install, and have a consistent, opinionated development environment where your AI assistant follows professional standards.
+
+---
+
+## Quick Start
 
 ```bash
-# Clone the repository
 git clone https://github.com/LuisSambrano/antigravity-config.git
-
-# Run the installer
 cd antigravity-config && chmod +x install.sh && ./install.sh
-
-# Restart your IDE and type:
-/status
 ```
 
-**That's it!** Your AI is now supercharged. 🎉
+The installer copies rules, skills, and workflows into your workspace's `.agent/` directory and sets up `GEMINI.md` as the global rules file.
 
 ---
 
-## 🎁 What You Get
-
-<table>
-<tr>
-<td width="50%">
-
-### 🧠 300+ Skills
-
-Pre-built expertise in:
-
-- **AI Agents** — LangGraph, CrewAI, RAG
-- **Web Dev** — Next.js, React, Tailwind
-- **Blockchain** — Celo, EVM, MiniPay, DeFi
-- **Security** — API security, Pentesting
-- **Growth** — Marketing Agency, CRO, Copywriting
-- **Automation** — Playwright, GitHub Actions
-
-</td>
-<td width="50%">
-
-### ⚡ 4 Simple Commands
-
-Everything else is automatic:
-
-- `/deploy` — Production deployment
-- `/idea` — Evaluate new ideas
-- `/status` — Project health check
-- `/marketing-agency` — Launch full campaigns
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 📋 Master Rules
-
-Consistent quality across all projects:
-
-- Architecture standards
-- Code conventions
-- Security best practices
-- Quality gates
-
-</td>
-<td width="50%">
-
-### 🤖 Automatic Behaviors
-
-Your AI handles everything:
-
-- Code quality checks
-- Security audits
-- Documentation
-- Best practices
-
-</td>
-</tr>
-</table>
-
----
-
-## 📊 Skills Library
-
-<div align="center">
-
-|      Category      | Skills | Highlights                                            |
-| :----------------: | :----: | :---------------------------------------------------- |
-|  🤖 **AI Agents**  |  30+   | LangGraph, CrewAI, RAG, Voice AI, Prompt Engineering  |
-| 🔧 **Automation**  |  50+   | Playwright, Firecrawl, GitHub Actions, Web Scraping   |
-|  🔒 **Security**   |  30+   | API Security, Auth, Penetration Testing               |
-|   💻 **Web Dev**   |  100+  | Next.js, React, Tailwind, Supabase, Vercel            |
-|  ⛓️ **Web3/Celo**  |  20+   | Celo, MiniPay, DeFi, Smart Contracts, Fee Abstraction |
-|   ✍️ **Content**   |  30+   | SEO, Technical Writing, Copywriting                   |
-| 🏗️ **Engineering** |  15+   | Architecture, Docker, CI/CD, Testing                  |
-|   📈 **Growth**    |  10+   | Marketing Agency, CRO, A/B Testing, Email Sequences   |
-
-</div>
-
----
-
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 antigravity-config/
-├── 📄 README.md           ← English Documentation
-├── 📄 README.es.md        ← Documentación en Español
-├── 📄 README.pt.md        ← Documentação em Português
-├── 🚀 install.sh          ← One-click installer
-├── 🧠 GEMINI.md           ← AI brain template
+├── GEMINI.md                  # Global rules template (customize for your needs)
+├── install.sh                 # Installer script
 │
-├── 📋 rules/              ← Master rules (always active)
-│   ├── PROTOCOL_ZERO.md
+├── rules/                     # Coding and architecture standards
+│   ├── PROTOCOL_ZERO.md       # Core philosophy and principles
 │   ├── ARCHITECTURE_STANDARDS.md
 │   ├── CODE_STANDARDS.md
-│   └── QUALITY_GATES.md
+│   ├── QUALITY_GATES.md
+│   ├── frontend/              # Frontend-specific rules
+│   └── backend/               # Backend-specific rules
 │
-├── 🛠️ skills/             ← 300+ skills by category
-│   ├── ai-agents/
-│   ├── product-growth/
-│   ├── web-development/
-│   └── ...
+├── skills/                    # Domain knowledge (44 skills)
+│   ├── 1-core/                # Coding fundamentals
+│   ├── 2-ai/                  # AI agents, RAG, prompting
+│   ├── 3-web/                 # Web development (Next.js, React, Tailwind)
+│   ├── 4-automation/          # Testing, CI/CD, scraping
+│   ├── 5-security/            # API security, pentesting
+│   ├── 6-content/             # Technical writing, SEO
+│   ├── 7-meta/                # Skill creation and management
+│   └── 8-blockchain/          # Celo, EVM, DeFi
 │
-└── ⚙️ workflows/          ← User commands
-    ├── deploy.md
-    ├── idea.md
-    ├── status.md
-    └── marketing-agency.md
+├── workflows/                 # Agent command scripts
+│   ├── deploy.md              # /deploy — production deployment
+│   ├── idea.md                # /idea — evaluate project ideas
+│   ├── status.md              # /status — project health check
+│   ├── create-component.md    # /create-component — scaffold components
+│   └── help.md                # /help — list available commands
+│
+├── templates/                 # Project templates
+├── research/                  # Decision log and key findings
+└── docs/                      # Additional documentation
 ```
 
 ---
 
-<div align="center">
+## Skills Reference
 
-## 🌟 Star This Repo
+Skills are markdown files that give the AI agent domain-specific knowledge. Each skill contains instructions, patterns, and references the agent uses when working in that domain.
 
-If this helped you, **give it a star** ⭐ to help others find it!
+### 1-core — Fundamentals
 
-<a href="https://github.com/LuisSambrano/antigravity-config/stargazers">
-  <img src="https://img.shields.io/github/stars/LuisSambrano/antigravity-config?style=for-the-badge&logo=github&color=yellow" alt="Star on GitHub"/>
-</a>
+Coding conventions, project structure standards, and TypeScript patterns that apply to all projects.
 
-</div>
+### 2-ai — AI & Agents (10 skills)
+
+Multi-agent orchestration (LangGraph, CrewAI), RAG systems, prompt engineering, voice AI development, and agent evaluation frameworks.
+
+### 3-web — Web Development (8 skills)
+
+Next.js App Router patterns, React best practices, Tailwind CSS architecture, Supabase integration, Vercel deployment, and UI/UX design principles.
+
+### 4-automation — Testing & DevOps (4 skills)
+
+Playwright browser testing, GitHub Actions workflows, deployment procedures, and web scraping with Firecrawl.
+
+### 5-security — Security (2 skills)
+
+API security best practices and penetration testing checklists.
+
+### 6-content — Content Creation
+
+Technical writing guidelines, SEO copywriting, and documentation standards.
+
+### 7-meta — Skill Management (3 skills)
+
+Tools for creating new skills, planning with files, and continuous improvement (Kaizen).
+
+### 8-blockchain — Celo & EVM (16 skills)
+
+Full Celo development stack: MiniPay integration, fee abstraction, stablecoin addresses, Celo Composer scaffolding, viem/wagmi libraries, Hardhat/Foundry tooling, cross-chain bridging, DeFi protocol integration, ERC-8004 agent trust protocol, and x402 HTTP payment protocol.
+
+> See [skills/INDEX.md](./skills/INDEX.md) for the complete skill-by-skill breakdown.
 
 ---
 
-## 🤝 Contributing
+## Rules Overview
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+The rules define how the AI agent writes and validates code. They are loaded into the agent's context and enforced automatically.
+
+| Rule                        | Purpose                                                           |
+| --------------------------- | ----------------------------------------------------------------- |
+| `PROTOCOL_ZERO.md`          | Core philosophy: quality over speed, local as source of truth     |
+| `ARCHITECTURE_STANDARDS.md` | Project structure, component organization, file naming            |
+| `CODE_STANDARDS.md`         | TypeScript strict mode, import order, error handling, JSDoc       |
+| `QUALITY_GATES.md`          | Pre-commit checks, build verification, accessibility, performance |
+
+---
+
+## Customization
+
+`GEMINI.md` is the main configuration file. It aggregates all rules into a single document that the AI agent reads. Edit it to:
+
+- Add or remove rules
+- Change naming conventions
+- Adjust quality thresholds
+- Add workflow routing for your own commands
+
+Sections marked with `<!-- CUSTOMIZE -->` are designed to be modified.
+
+---
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, workflows, or rules.
 
 ```bash
-# Fork the repo
-# Create your feature branch
-git checkout -b feature/amazing-feature
-
-# Commit your changes
-git commit -m 'feat: add amazing feature'
-
-# Push and create a PR
-git push origin feature/amazing-feature
+git checkout -b feature/your-feature
+git commit -m 'feat(skills): add new-skill-name'
+git push origin feature/your-feature
 ```
 
 ---
 
-## 🔬 Research & Decision Log
-
-This project acts as the **Research Center** for the Antigravity ecosystem. It defines the standards, rules, and philosophy that all other projects must follow.
+## Research & Decision Log
 
 | Document                                      | Purpose                                |
 | --------------------------------------------- | -------------------------------------- |
-| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | The "Constitution" and core principles |
-| [prompts/](./research/prompts/)               | Master Rule Definition Status          |
-| [rules/](./rules/)                            | Detailed Standards Documents           |
+| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | Core principles and research findings  |
+| [prompts/](./research/prompts/)               | Rule definition prompts and iterations |
+| [rules/](./rules/)                            | The resulting standards documents      |
 
-> **System Protocol**: Read `KEY_FINDINGS.md` first to understand the **Protocol Zero** and non-negotiable values.
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
 <div align="center">
 
-## 📬 Connect
-
-<a href="https://github.com/LuisSambrano"><img src="https://img.shields.io/badge/GitHub-LuisSambrano-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
-<a href="https://x.com/luissambrano_ux"><img src="https://img.shields.io/badge/Twitter-@luissambrano__ux-1DA1F2?style=for-the-badge&logo=twitter" alt="Twitter"/></a>
-
-<br/><br/>
-
-**Made with 🧠 by Luis Sambrano**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
+**Maintained by [Luis Sambrano](https://github.com/LuisSambrano)**
 
 </div>
